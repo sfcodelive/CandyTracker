@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candy_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Candy Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chocolate Bar</fullName>
+                <default>false</default>
+                <label>Chocolate Bar</label>
+            </value>
+            <value>
+                <fullName>Jelly Beans</fullName>
+                <default>false</default>
+                <label>Jelly Beans</label>
+            </value>
+            <value>
+                <fullName>Lollipops</fullName>
+                <default>false</default>
+                <label>Lollipops</label>
+            </value>
+            <value>
+                <fullName>Licorice</fullName>
+                <default>false</default>
+                <label>Licorice</label>
+            </value>
+            <value>
+                <fullName>Gum</fullName>
+                <default>false</default>
+                <label>Gum</label>
+            </value>
+            <value>
+                <fullName>Chips</fullName>
+                <default>false</default>
+                <label>Chips</label>
+            </value>
+            <value>
+                <fullName>Chocolates</fullName>
+                <default>false</default>
+                <label>Chocolates</label>
+            </value>
+            <value>
+                <fullName>Caramels</fullName>
+                <default>false</default>
+                <label>Caramels</label>
+            </value>
+            <value>
+                <fullName>Gummies</fullName>
+                <default>false</default>
+                <label>Gummies</label>
+            </value>
+            <value>
+                <fullName>Hard Candy</fullName>
+                <default>false</default>
+                <label>Hard Candy</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
