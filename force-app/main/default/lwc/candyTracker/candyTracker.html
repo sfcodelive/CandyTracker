@@ -1,0 +1,50 @@
+<template>
+  <lightning-button onclick={onTapGetLocation} label="Get Location">
+  </lightning-button>
+  <template if:true={position}>
+    <lightning-card>
+      <h1 slot="title">My Coordinates</h1>
+      <div class="slds-m-around_medium">
+        <lightning-map
+          map-markers={mapMarkers}
+          markers-title="My Current Location"
+          zoom-level="19"
+        >
+        </lightning-map>
+        <lightning-record-edit-form object-api-name="Candy_Spot__c">
+          <lightning-messages> </lightning-messages>
+          <lightning-input-field field-name="Name"> </lightning-input-field>
+          <lightning-input-field
+            field-name="Candy_Type__c"
+          ></lightning-input-field>
+          <lightning-input-field
+            field-name="Candy_Date__c"
+          ></lightning-input-field>
+          <lightning-input-field
+            field-name="Quantity__c"
+          ></lightning-input-field>
+          <lightning-input-field field-name="size__c"></lightning-input-field>
+          <lightning-input-field
+            field-name="Healthy__c"
+          ></lightning-input-field>
+          <lightning-input-field field-name="Nuts__c"></lightning-input-field>
+          <lightning-input-field
+            field-name="Location__Latitude__s"
+            value={position.coords.latitude}
+          ></lightning-input-field>
+          <lightning-input-field
+            field-name="Location__Longitude__s"
+            value={position.coords.longitude}
+          ></lightning-input-field>
+
+          <lightning-button
+            class="slds-m-top_small"
+            type="submit"
+            label="Create new"
+          >
+          </lightning-button>
+        </lightning-record-edit-form>
+      </div>
+    </lightning-card>
+  </template>
+</template>

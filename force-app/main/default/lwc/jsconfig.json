@@ -5,6 +5,12 @@
         "paths": {
             "c/testbed": [
                 "testbed/testbed.js"
+            ],
+            "c/CandyTracker": [
+                "CandyTracker/CandyTracker.js"
+            ],
+            "c/candyTracker": [
+                "candyTracker/candyTracker.js"
             ]
         }
     },
