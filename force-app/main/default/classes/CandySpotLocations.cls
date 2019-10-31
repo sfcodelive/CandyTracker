@@ -4,9 +4,9 @@ public with sharing class CandySpotLocations {
         return [
             SELECT Name
             FROM Candy_Spot__c 
-            WHERE DISTANCE(Location__c, GEOLOCATION(:latitude, :longitude), 'mi') < 20 
+            WHERE DISTANCE(Location__c, GEOLOCATION(:latitude, :longitude), 'mi') < 5 
             ORDER BY DISTANCE(Location__c, GEOLOCATION(:latitude, :longitude), 'mi')
-            LIMIT 10
+            LIMIT 5
         ];
     }
 }
