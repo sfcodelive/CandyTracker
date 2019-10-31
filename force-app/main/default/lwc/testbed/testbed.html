@@ -1,0 +1,14 @@
+<template>
+  <lightning-button
+    onclick={tappedGetGeoFix}
+    label="get Geo Fix"
+  ></lightning-button>
+
+  <template if:true={position.coords.latitude}>
+    <p>Latitude: {position.coords.latitude}</p>
+    <p>Longitude: {position.coords.longitude}</p>
+
+    <lightning-map map-markers={mapMarkers} markers-title="current location">
+    </lightning-map>
+  </template>
+</template>
